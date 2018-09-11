@@ -61,7 +61,7 @@ function y = bernoulli (m, x)
   elseif (isscalar (x))
     y = zeros (size (m));
   else
-    error ('bernoulli: inputs N and X must have compatible sizes')
+    error ("bernoulli: inputs N and X must have compatible sizes!!")
   end
 
   cmd = { 'Lm = _ins[0]'
